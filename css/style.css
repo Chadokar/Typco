@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 4% 3%;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-list li a:hover{
+    color: rgb(197,194,194);
+}
+
+.logo{
+    width: 20%;
+    padding-left: 5%;
+    display: flex;
+}
+
+.logo img{
+    width: 38%;
+    border-radius: 50%;
+}
+
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.btn-dark{
+    color: black;
+    border:2px solid grey;
+    font-size: 16px;
+}
+
+#search{
+    padding: 5px;
+    border-radius: 6px;
+    border: 2px solid grey;
+    font-size: 17px;
+    background: none;
+    color: aliceblue;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(../images/img2.JPG);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+
+}
+
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-family: 'Rubik', sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+
+.firstHalf{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+
+
+.secondHalf img{
+    width: 70%;
+    padding: 0px 0;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 35px;
+}
+
+.text-small{
+    font-size: 14px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 40px 0;
+}
+
+.section-Left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    width: 70%;
+    margin: 0vh 10vh;
+}
+
+.sectionTag{
+    padding: 10px 0px;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail{
+    margin: 0vh 7vh;
+    margin-top: 80px;
+}
+
+.thumbnail img{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.contact{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f6f5f4;
+    height: 833px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 24px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+.text-foot{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .rightNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .secondHalf{
+        width: 17%;
+    }
+
+    #search{
+        width: 100%;
+    }
+
+    .firstSection{
+        height: 70vh;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 62px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+        display: none;
+    }
+
+    .paras{
+        width: 90%;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-bottom: 15px;
+    }
+}
